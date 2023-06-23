@@ -7,7 +7,8 @@ let year = now.getFullYear();
 export default () => (
   <div>
     <hr />
-    <p>Made with <span className={footerStyles.heart}>&#10084;</span> in New Haven || &copy; {year}, Henry Quinn</p>
+    <p>Made with <span className={footerStyles.heart}>&#10084;</span> in Bulgaria || &copy; {year}, Mario Georgiev</p>
+    <p>Credits to HenryNeeds.Coffee</p>
   </div>
 )
 

@@ -27,10 +27,10 @@ let pageNotFoundLoginPrompt = "Current login: " + day + " " + month + " " + date
 export default () => (
   <div>
     <span >{ pageNotFoundLoginPrompt }<br />
-    Welcome to HenryNeeds.Coffee!</span>
+    Welcome to MarioGeorgiev.COM!</span>
     <br /><br />
     <MenuBar />
-    <p>[hquinn@HenryNeeds ~]$ &nbsp;cd /var/www/PageNotFound</p>
+    <p>[mariog@MarioGeorgiev ~]$ &nbsp;cd /var/www/PageNotFound</p>
     <br />
     <div>
       <div>

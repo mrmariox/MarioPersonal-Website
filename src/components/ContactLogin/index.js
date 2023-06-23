@@ -24,7 +24,7 @@ let year = now.getFullYear();
 
 let currentLoginPrompt = "Current login: " + day + " " + month + " " + date + " " + hours +":" + minutes + ":" + seconds + " " + year;
 
-let myEmail = "HenryQuinnIV" + String.fromCharCode(64) + "gmail.com";
+let myEmail = "mg" + String.fromCharCode(64) + "mariogeorgiev.com";
 
 const ContactPage = () => {
   const [hidden, setHidden] = useState(true);
@@ -35,28 +35,28 @@ const ContactPage = () => {
   return (
     <div>
       <span >{ currentLoginPrompt }<br />
-      Welcome to HenryNeeds.Coffee!</span>
+      Welcome to MarioGeorgiev.COM!</span>
       <br /><br />
       <MenuBar />
-      <p>[hquinn@HenryNeeds ~]$ <span className={contactLoginStyles.typed}>&nbsp;sendmail<span>&nbsp;</span></span></p>
+      <p>[mariog@mariogeorgiev ~]$ <span className={contactLoginStyles.typed}>&nbsp;sendmail<span>&nbsp;</span></span></p>
       <div className={hidden ? contactLoginStyles.hiddenPart : ""}>
         <h1>Contact</h1>
         <hr/>
         <h2>Email</h2>
         <a href={ "mailto:"+myEmail }> [ Email Me ]</a>
         <h2>Social Media</h2>
-        <a href="https://github.com/quinncuatro" target="_blank" rel="noopener noreferrer">[ GitHub ]</a>&nbsp;<a href="https://ko-fi.com/henryquinn" target="_blank" rel="noopener noreferrer">[ Ko-fi ]</a>&nbsp;
-        <a href="https://www.twitter.com/quinncuatro" target="_blank" rel="noopener noreferrer">[ Twitter ]</a>
+        <a href="https://github.com/mrmariox" target="_blank" rel="noopener noreferrer">[ GitHub ]</a>&nbsp;
+        <a href="https://www.twitter.com/mrmariox_" target="_blank" rel="noopener noreferrer">[ Twitter ]</a>
         <h2>Other Information</h2>
-        <p>I'm super open to being contacted for speaking at conferences, on panels, or as a guest on a podcast! I just ask that your organization be one that provides equal opportunities to members of the BIPOC and LGBTQIA+ communities.</p>
+        <p>I'm super open to being contacted for mentoring, speaking on Cybersecurity and more.</p>
         <p>Also please reach out if you'd like to collaborate on something!</p>
         <p>I've always wanted to:</p>
         <ul>
-          <li>Write a guest blog post</li>
+          <li>Drive a F1 Car</li>
           <li>Have a guest write for my blog</li>
           <li>Help write a book</li>
-          <li>Help organize a tech conference in New Haven</li>
-          <li>Help write a book</li>
+          <li>Help organize a tech conference in Bulgaria</li>
+          <li>Do more of what life is all about</li>
         </ul>
         <hr />
         <Footer />

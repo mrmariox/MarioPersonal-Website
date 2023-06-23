@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    author: `Henry Quinn`,
-    description: `Blog Posts, Communities, and Projects`,
-    keywords: `Henry, Quinn, DevOps, Engineer, Resume, Docker, Bash, JavaScript, JS, Automation`,
-    title: `Henry Needs Coffee`,
-    siteUrl: `https://henryneeds.coffee`,
+    author: `Mario Georgiev`,
+    description: `Blog Posts, Communities`,
+    keywords: `Mario, Georgiev, Secure Group, DevOps, Manager, Technical DevOps, Docker, Bash`,
+    title: `Mario Georgiev's Space`,
+    siteUrl: `https://mariogeorgiev.com`,
     social: {
-      github: "quinncuatro",
-      linkedin: "henryquinniv",
-      twitter: "quinncuatro",
+      github: "mrmariox",
+      linkedin: "mariogeorgiev",
+      twitter: "mrmariox_",
     }
   },
   pathPrefix: '__GATSBY_IPFS_PATH_PREFIX__',
@@ -46,8 +46,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Henry Quinn - Automation Engineer`,
-        short_name: `HenryNeedsCoffee`,
+        name: `Mario Georgiev - Technical Manager`,
+        short_name: `Mario Georgiev`,
         start_url: `/`,
         background_color: `#355366`,
         theme_color: `#355366`,
@@ -58,8 +58,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: "https://henryneeds.coffee",
-        sitemap: "https://henryneeds.coffee/sitemap.xml",
+        host: "https://mariogeorgiev.com",
+        sitemap: "https://mariogeorgiev.com/sitemap.xml",
         policy: [{ userAgent: "*", allow: "/" }],
       },
     },

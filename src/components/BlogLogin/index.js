@@ -35,12 +35,14 @@ const BlogPosts = data => {
   return (
     <div>
       <span >{ currentLoginPrompt }<br />
-      Welcome to HenryNeeds.Coffee!</span>
+      Welcome to MarioGeorgiev.COM!</span>
       <br /><br />
       <MenuBar />
-      <p>[hquinn@HenryNeeds ~]$ <span className={blogLoginStyles.typed}>&nbsp;ls blog/<span>&nbsp;</span></span></p>
+      <p>[mariog@MarioGeorgiev ~]$ <span className={blogLoginStyles.typed}>&nbsp;ls blog/<span>&nbsp;</span></span></p>
       <div className={hidden ? blogLoginStyles.hiddenPart : ""}>
         <h1>Recent Articles</h1>
+        <h2>ContentNotFound</h2>
+        <h3>Procrastination and other Projects take too much of the resources on the machine. Please review /brain/capacity/ and /body/timeleft</h3>
         <hr />
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <PostListing key={node.id} post={node} />

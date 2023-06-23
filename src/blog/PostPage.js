@@ -35,10 +35,10 @@ export default class PostPage extends Component {
       <Layout>
         <div>
           <span >{ blogPostPagePrompt }<br />
-          Welcome to HenryNeeds.Coffee!</span>
+          Welcome to MarioGeorgiev.COM!</span>
           <br /><br />
           <MenuBar />
-          <p>[hquinn@HenryNeeds ~]$ cat /var/www/blog/post.md</p>
+          <p>[mariog@MarioGeorgiev ~]$ cat /var/www/blog/post.md</p>
         </div>
         <div>
           <h1>{post.title}</h1>

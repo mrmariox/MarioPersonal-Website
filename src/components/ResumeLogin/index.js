@@ -3,7 +3,6 @@ import { graphql, StaticQuery } from "gatsby"
 import resumeLoginStyles from "./resumeLogin.module.css"
 import MenuBar from "../MenuBar"
 import Job from "../Jobs"
-import Project from "../Projects"
 import Education from "../Education"
 import Footer from "../Footer"
 
@@ -37,13 +36,13 @@ const ResumeLogin = data => {
   return (
     <div>
       <span >{ currentLoginPrompt }<br />
-      Welcome to HenryNeeds.Coffee!</span>
+      Welcome to MarioGeorgiev.COM!</span>
       <br /><br />
       <MenuBar />
-      <p>[hquinn@HenryNeeds ~]$ <span className={resumeLoginStyles.typed}>&nbsp;whoami<span>&nbsp;</span></span></p>
+      <p>[mariog@MarioGeorgiev ~]$ <span className={resumeLoginStyles.typed}>&nbsp;whoami<span>&nbsp;</span></span></p>
       <div className={hidden ? resumeLoginStyles.hiddenPart : ""}>
-        <h1>Henry Quinn IV</h1>
-        <h2>Automation Engineer</h2>
+        <h1>Mario Georgiev</h1>
+        <h2>Technical Support Manager / DevOps</h2>
         <h3>Work Experience:</h3>
         {data.allResumeYaml.edges[0].node.jobs.map((job) => (
           <Job
@@ -53,21 +52,7 @@ const ResumeLogin = data => {
           details={job.details}
           resource_url_1={job.resource_url_1}
           resource_title_1={job.resource_title_1}
-          resource_url_2={job.resource_url_2}
-          resource_title_2={job.resource_title_2}
         />
-        ))}
-        <hr />
-        <h3>Public Projects:</h3>
-        {data.allResumeYaml.edges[0].node.projects.map((project) => (
-          <Project
-            name={project.name}
-            year={project.year}
-            description={project.description}
-            technologies={project.technologies}
-            github={project.github}
-            dockerhub={project.dockerhub}
-          />
         ))}
         <hr />
         <h3>Education:</h3>
@@ -92,16 +77,6 @@ export default () => (
                 time
                 resource_url_1
                 resource_title_1
-                resource_url_2
-                resource_title_2
-              }
-              projects {
-                name
-                year
-                description
-                technologies
-                github
-                dockerhub
               }
             }
           }
